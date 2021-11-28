@@ -176,7 +176,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-11-28 19:03:27" itemprop="dateModified" datetime="2021-11-28T19:03:27+08:00">2021-11-28</time>
+                <time title="Modified: 2021-11-28 19:53:50" itemprop="dateModified" datetime="2021-11-28T19:53:50+08:00">2021-11-28</time>
               </span>
 
           
@@ -191,6 +191,12 @@
 
       
           <h1 id="Leetcode每日一题"><a href="#Leetcode每日一题" class="headerlink" title="Leetcode每日一题"></a>Leetcode每日一题</h1><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>重新开了一个力扣刷题进度 从2021年11月28号开始  每天刷一道 先刷简单题 跟着y总去学算法基础课 按照标签去刷 每天都要写题  希望有一天可以刷到1500+  周赛拿到ak  （哈哈哈哈哈哈   好像我在做梦）</p>
+<h3 id="递归"><a href="#递归" class="headerlink" title="递归"></a>递归</h3><h4 id="2021年11月28日-344-反转字符串"><a href="#2021年11月28日-344-反转字符串" class="headerlink" title="2021年11月28日 344. 反转字符串"></a>2021年11月28日 <a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/reverse-string/">344. 反转字符串</a></h4><p>​    这道题的标签是从递归中找到的 但用双指针可以更好的解决这个问题 </p>
+<p>​    在一个字符串数组中 将它翻转过来 我们可以先求出他的长度  然后使用双指针 一个指向头结点 一个指向尾结点 然后依次遍历 将头结点跟尾结点交换 可以定义一个temp存放数值 也可以用swap函数 直接交换头尾字符 当头结点等于尾结点时 结束循环 </p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">reverseString</span><span class="params">(vector&lt;<span class="keyword">char</span>&gt;&amp; s)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> len = s.<span class="built_in">size</span>();</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> left = <span class="number">0</span>, right = len - <span class="number">1</span>; left &lt; right; left++, right--) &#123;</span><br><span class="line">            <span class="built_in">swap</span>(s[left], s[right]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+
+
 <h1 id="算法笔记"><a href="#算法笔记" class="headerlink" title="算法笔记"></a>算法笔记</h1><h2 id="简介-1"><a href="#简介-1" class="headerlink" title="简介"></a>简介</h2><p>再一次的重新学习算法笔记  今年已经大三了  晴神写的算法笔记从大一都开始看 每次都断断续续的 没有系统的把题目刷完 </p>
 <p>今天是2021年11月28日 写下这篇博客就是为了督促自己在明年三月份前把算法笔记学完 多刷题 准备PAT甲级跟蓝桥杯 </p>
 <p>以后就按照章节去刷 同样 博客分类也分成两部分 一个是每章的学习记录 另一个是每周四做一个学习总结 学习总结不光包括算法笔记  还有考研复习以及生活上的回顾 做一个复盘</p>

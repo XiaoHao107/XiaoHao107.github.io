@@ -20,15 +20,15 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="Leetcode每日一题简介重新开了一个力扣刷题进度 从2021年11月28号开始  每天刷一道 先刷简单题 跟着y总去学算法基础课 按照标签去刷 每天都要写题  希望有一天可以刷到1500+  周赛拿到ak  （哈哈哈哈哈哈   好像我在做梦） 算法笔记简介再一次的重新学习算法笔记  今年已经大三了  晴神写的算法笔记从大一都开始看 每次都断断续续的 没有系统的把题目刷完  今天是2021年11">
+  <meta name="description" content="Leetcode每日一题简介重新开了一个力扣刷题进度 从2021年11月28号开始  每天刷一道 先刷简单题 跟着y总去学算法基础课 按照标签去刷 每天都要写题  希望有一天可以刷到1500+  周赛拿到ak  （哈哈哈哈哈哈   好像我在做梦） 递归2021年11月28日 344. 反转字符串​    这道题的标签是从递归中找到的 但用双指针可以更好的解决这个问题  ​    在一个字符串数组中">
 <meta property="og:type" content="article">
 <meta property="og:title" content="学习记录">
 <meta property="og:url" content="http://example.com/2021/11/27/Leetcode/index.html">
 <meta property="og:site_name" content="白日梦想家">
-<meta property="og:description" content="Leetcode每日一题简介重新开了一个力扣刷题进度 从2021年11月28号开始  每天刷一道 先刷简单题 跟着y总去学算法基础课 按照标签去刷 每天都要写题  希望有一天可以刷到1500+  周赛拿到ak  （哈哈哈哈哈哈   好像我在做梦） 算法笔记简介再一次的重新学习算法笔记  今年已经大三了  晴神写的算法笔记从大一都开始看 每次都断断续续的 没有系统的把题目刷完  今天是2021年11">
+<meta property="og:description" content="Leetcode每日一题简介重新开了一个力扣刷题进度 从2021年11月28号开始  每天刷一道 先刷简单题 跟着y总去学算法基础课 按照标签去刷 每天都要写题  希望有一天可以刷到1500+  周赛拿到ak  （哈哈哈哈哈哈   好像我在做梦） 递归2021年11月28日 344. 反转字符串​    这道题的标签是从递归中找到的 但用双指针可以更好的解决这个问题  ​    在一个字符串数组中">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-11-27T08:17:51.508Z">
-<meta property="article:modified_time" content="2021-11-28T11:03:27.505Z">
+<meta property="article:modified_time" content="2021-11-28T11:53:50.648Z">
 <meta property="article:author" content="XiaoHao107&#x2F;XiaoHao107">
 <meta name="twitter:card" content="summary">
 
@@ -180,7 +180,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-11-28 19:03:27" itemprop="dateModified" datetime="2021-11-28T19:03:27+08:00">2021-11-28</time>
+                <time title="Modified: 2021-11-28 19:53:50" itemprop="dateModified" datetime="2021-11-28T19:53:50+08:00">2021-11-28</time>
               </span>
 
           
@@ -195,6 +195,12 @@
 
       
         <h1 id="Leetcode每日一题"><a href="#Leetcode每日一题" class="headerlink" title="Leetcode每日一题"></a>Leetcode每日一题</h1><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>重新开了一个力扣刷题进度 从2021年11月28号开始  每天刷一道 先刷简单题 跟着y总去学算法基础课 按照标签去刷 每天都要写题  希望有一天可以刷到1500+  周赛拿到ak  （哈哈哈哈哈哈   好像我在做梦）</p>
+<h3 id="递归"><a href="#递归" class="headerlink" title="递归"></a>递归</h3><h4 id="2021年11月28日-344-反转字符串"><a href="#2021年11月28日-344-反转字符串" class="headerlink" title="2021年11月28日 344. 反转字符串"></a>2021年11月28日 <a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/reverse-string/">344. 反转字符串</a></h4><p>​    这道题的标签是从递归中找到的 但用双指针可以更好的解决这个问题 </p>
+<p>​    在一个字符串数组中 将它翻转过来 我们可以先求出他的长度  然后使用双指针 一个指向头结点 一个指向尾结点 然后依次遍历 将头结点跟尾结点交换 可以定义一个temp存放数值 也可以用swap函数 直接交换头尾字符 当头结点等于尾结点时 结束循环 </p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">reverseString</span><span class="params">(vector&lt;<span class="keyword">char</span>&gt;&amp; s)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> len = s.<span class="built_in">size</span>();</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> left = <span class="number">0</span>, right = len - <span class="number">1</span>; left &lt; right; left++, right--) &#123;</span><br><span class="line">            <span class="built_in">swap</span>(s[left], s[right]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+
+
 <h1 id="算法笔记"><a href="#算法笔记" class="headerlink" title="算法笔记"></a>算法笔记</h1><h2 id="简介-1"><a href="#简介-1" class="headerlink" title="简介"></a>简介</h2><p>再一次的重新学习算法笔记  今年已经大三了  晴神写的算法笔记从大一都开始看 每次都断断续续的 没有系统的把题目刷完 </p>
 <p>今天是2021年11月28日 写下这篇博客就是为了督促自己在明年三月份前把算法笔记学完 多刷题 准备PAT甲级跟蓝桥杯 </p>
 <p>以后就按照章节去刷 同样 博客分类也分成两部分 一个是每章的学习记录 另一个是每周四做一个学习总结 学习总结不光包括算法笔记  还有考研复习以及生活上的回顾 做一个复盘</p>
@@ -268,7 +274,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Leetcode%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98"><span class="nav-number">1.</span> <span class="nav-text">Leetcode每日一题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AE%80%E4%BB%8B"><span class="nav-number">1.1.</span> <span class="nav-text">简介</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0"><span class="nav-number">2.</span> <span class="nav-text">算法笔记</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AE%80%E4%BB%8B-1"><span class="nav-number">2.1.</span> <span class="nav-text">简介</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Leetcode%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98"><span class="nav-number">1.</span> <span class="nav-text">Leetcode每日一题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AE%80%E4%BB%8B"><span class="nav-number">1.1.</span> <span class="nav-text">简介</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%80%92%E5%BD%92"><span class="nav-number">1.1.1.</span> <span class="nav-text">递归</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2021%E5%B9%B411%E6%9C%8828%E6%97%A5-344-%E5%8F%8D%E8%BD%AC%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="nav-number">1.1.1.1.</span> <span class="nav-text">2021年11月28日 344. 反转字符串</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0"><span class="nav-number">2.</span> <span class="nav-text">算法笔记</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AE%80%E4%BB%8B-1"><span class="nav-number">2.1.</span> <span class="nav-text">简介</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
